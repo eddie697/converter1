@@ -37,7 +37,7 @@
         fetch(apiUrl)
            .then(response => response.json())
            .then(data => {
-            const exchangeRate = data['binance-usd'].ngn;
+            const exchangeRate = data ['binance-usd'].ngn;
             const convertAmount = amount * exchangeRate;
             resultDiv.innerText = `${amount} BUSD is approximately ${convertAmount} NGN`;
 
